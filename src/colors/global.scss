@@ -1,0 +1,11 @@
+@import './variables.scss';
+
+// Common element
+a {
+  color: $color-link !important;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $color-link-hover !important;
+}
