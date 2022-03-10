@@ -9,8 +9,8 @@
       >
         <v-row no-gutters class="d-flex justify-center align-center text-center">
           <v-col cols="auto">
-            <h1>HELLO, WE ARE CURRENT WORKING ON
-              <a href="/#/about">ABOUT SECTION</a>
+            <h1>HELLO, I'M WORKING ON
+              <a href="/#/contact">CONTACT SECTION</a>
             </h1>
           </v-col>
           <v-col cols="12" class="d-flex justify-center">

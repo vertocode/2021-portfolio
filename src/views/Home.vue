@@ -4,7 +4,7 @@
       <v-card
         :class="isCardDark"
         elevation="0"
-        class="my-5 text-center card-main__rounded"
+        class="my-1 text-center card-main__rounded"
         outlined
       >
         <h1 class="text-center mt-4">{{ HOME_DATA.FULL_NAME }}</h1>
@@ -19,7 +19,7 @@
           </v-col>
           <v-col cols="auto" md="9">
             <p
-              class="text-left mt-5 mx-5 paragraph-indent"
+              class="text-left mt-5 mx-2 paragraph-indent"
               v-for="(paragraph, index) in HOME_DATA.FIRST_DESCRIPTION"
               :key="index"
             >
@@ -27,14 +27,6 @@
             </p>
           </v-col>
         </v-row>
-        <!--
-         it is not necessary to remove
-         this component "in-progress",
-         if you are at work just pass
-         :progress="true",
-         progress default is false.
-       -->
-        <in-progress/>
       </v-card>
       <v-card
         :class="isCardDark"
@@ -69,6 +61,14 @@
         </v-row>
       </v-card>
     </v-container>
+    <!--
+      it is not necessary to remove
+      this component "in-progress",
+      if you are at work just pass
+      :progress="true",
+      progress default is false.
+    -->
+    <in-progress :progress="true"/>
   </div>
 </template>
 
