@@ -68,7 +68,7 @@
       :progress="true",
       progress default is false.
     -->
-    <in-progress :progress="true"/>
+    <in-progress :progress="false"/>
   </div>
 </template>
 

@@ -17,6 +17,11 @@ export const DRAWER_DATA = [
     LOCATION: '/recommended-books',
   },
   {
+    NAME: 'Contact me',
+    ICON: 'mdi-account',
+    LOCATION: '/contact',
+  },
+  {
     NAME: 'GitHub',
     ICON: 'mdi-github',
     LOCATION: 'https://github.com/vertocode',

@@ -4,4 +4,5 @@ export const TOP_MENU_DATA = {
   ABOUT: 'ABOUT',
   PORTFOLIO: 'PORTFOLIO',
   BOOKS: 'BOOKS',
+  CONTACT: 'CONTACT',
 };

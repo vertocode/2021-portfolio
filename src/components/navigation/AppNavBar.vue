@@ -29,6 +29,14 @@
       >
         {{ TOP_MENU_DATA.BOOKS }}
       </v-btn>
+      <v-btn
+        height="64"
+        text
+        @click.prevent="handleContact"
+        v-if="!$vuetify.breakpoint.smAndDown"
+      >
+        {{ TOP_MENU_DATA.CONTACT }}
+      </v-btn>
       <v-switch
         v-model="$vuetify.theme.dark"
         :prepend-icon="themeIcon"
@@ -91,6 +99,12 @@ export default {
     },
     handleBook() {
       const path = '/recommended-books';
+      if (this.$route.path !== path) {
+        this.$router.push(path);
+      }
+    },
+    handleContact() {
+      const path = '/contact';
       if (this.$route.path !== path) {
         this.$router.push(path);
       }
