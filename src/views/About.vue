@@ -29,12 +29,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss" scoped>
-.about {
-  background-image: url("https://i.imgur.com/pzKawbZ.png");
-  background-position: center center;
-  background-size: cover;
-  height: 100%;
-}
-</style>

@@ -5,7 +5,7 @@
 export const VUETIFY_COLOR = {
   // DON'T CHANGE THE STRUCTURE OF THE OBJECTS, ONLY THE VALUES
   dark: {
-    primary: '#41b883',
+    primary: '#c95454',
     secondary: '#b0bec5',
     accent: '#8c9eff',
     error: '#b71c1c',

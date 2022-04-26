@@ -14,7 +14,7 @@ export const HOME_DATA = {
   IMAGE_PROFILE: ImageProfile,
   FIRST_DESCRIPTION: [
     'Hello, welcome to my portfolio! I\'ll be introducing myself and talking a little about myself, you can find out more through the "About" menu option.',
-    'I\'m a front end programmer, I also know a little bit about the back end but my best is the front. I like challenges related to programming and I am always looking to evolve myself. My programming knowledge started as a hobbin and curiosity, in order to have fun and pass the time I started creating personal projects that I loved to create, tried hard and loved when I got the expected result.',
+    'I\'m Front End Developer, QA Engineer and technology lover ❤️, I also know a little bit about the back end but my best is the front. I like challenges related to programming and I am always looking to evolve myself. My programming knowledge started as a hobbin and curiosity, in order to have fun and pass the time I started creating personal projects that I loved to create, tried hard and loved when I got the expected result.',
     'I like what I do with strong coffee, if you need some help and I can help you, feel free to call me, I like to help other people, in addition to being developing, I have big dreams and I\'m working in my technical and behavioral development.\n',
   ],
 };

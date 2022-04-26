@@ -18,13 +18,22 @@
             />
           </v-col>
           <v-col cols="auto" md="9">
+            <h2 class="mt-4 occupation">
+              <strong>Front-end Developer & Quality Assurance Engineer</strong></h2>
             <p
-              class="text-left mt-5 mx-2 paragraph-indent"
+              class="text-left mt-5 mx-2 paragraph-indent px-5"
               v-for="(paragraph, index) in HOME_DATA.FIRST_DESCRIPTION"
               :key="index"
             >
               {{ paragraph }}
             </p>
+            <v-img
+             src="https://c.tenor.com/NOYF3f82b_gAAAAC/programmer.gif"
+             class="ma-auto"
+             alt="programmer-gif"
+               max-height="150"
+               max-width="200"
+            />
           </v-col>
         </v-row>
       </v-card>
