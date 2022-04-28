@@ -1,9 +1,29 @@
 <template>
-  <div class="drawer-menu-items">
+  <div>
     <v-list nav flat>
       <v-list-item-group
         v-model="group"
       >
+        <v-list-item>
+          <v-list-item-avatar>
+            <v-img
+              src="./../../assets/img/everton-vanoni-little.jpg"
+              min-height="40px"
+            />
+          </v-list-item-avatar>
+        </v-list-item>
+        <v-list-item link>
+          <v-list-item-content>
+            <v-list-item-title class="text-h6">
+              Everton Vanoni
+            </v-list-item-title>
+            <v-list-item-subtitle>evertonvanoni1@gmail.com</v-list-item-subtitle>
+          </v-list-item-content>
+          <v-list-item-action>
+            <v-icon>mdi-menu-down</v-icon>
+          </v-list-item-action>
+        </v-list-item>
+        <v-divider></v-divider>
         <v-list-item
           :key="item.NAME"
           v-for="item in DRAWER_DATA"

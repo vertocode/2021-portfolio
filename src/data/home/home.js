@@ -9,20 +9,26 @@ import sass from '@/assets/img/services/sass.png';
 
 export const HOME_DATA = {
   // FIRST CARD DATA
-  FULL_NAME: 'Everton Vanoni Fernandes',
+  FULL_NAME: 'Front-end Developer & Quality Assurance Engineer',
   // to choose your profile image, just put the location it is in the import of "ImageProfile"
   IMAGE_PROFILE: ImageProfile,
   FIRST_DESCRIPTION: [
-    'Hello, welcome to my portfolio! I\'ll be introducing myself and talking a little about myself, you can find out more through the "About" menu option.',
-    'I\'m Front End Developer, QA Engineer and technology lover ❤️, I also know a little bit about the back end but my best is the front. I like challenges related to programming and I am always looking to evolve myself. My programming knowledge started as a hobbin and curiosity, in order to have fun and pass the time I started creating personal projects that I loved to create, tried hard and loved when I got the expected result.',
-    'I like what I do with strong coffee, if you need some help and I can help you, feel free to call me, I like to help other people, in addition to being developing, I have big dreams and I\'m working in my technical and behavioral development.\n',
+    'Hello, welcome to my website.',
+    'My name is Everton Vanoni Fernandes, I\'m 21 years old and I\'m glad you\'re here! ❤',
+    'I love technology and am curious about the area, you can talk to me about what might be cool. I also like a very strong coffee ☕ and I need music to be able to work with codes.',
+    'My favorite language is Javascript along with the Vue.js framework, I love creating applications with it, even this website was created with Vue. 👨🏻‍💻',
+    'I have an interesting knowledge in the QA area too, I\'ve learned a lot from working using Cypress.',
+    'I\'m a little obsessed with beautiful code, with a well-made structure, I\'m always looking to improve the code and structure of the project where I work. ⭐',
+    'I\'m always willing to help other team members, I like to help because it solidifies my knowledge and helps him too! I am pleased to see the partner grow.',
+    'I\'m very curious and I\'m always looking to improve my knowledge with studies and more studies, at the moment I\'m addicted to studying and practicing design patterns.',
+    'This was a summary of the summary about me, if you want to know me better you can contact me and it will be a pleasure to meet you! Thanks. 😉',
   ],
 };
 
 export const SERVICES = {
   // If you want it to have a second card, answer true, if not, answer false
   SECOND_CARD_VISIBLE: true,
-  SECOND_TITLE: 'Services for you',
+  SECOND_TITLE: 'Some services for you',
   SECOND_CARD_DATA: [
     {
       IMG: vuejs,

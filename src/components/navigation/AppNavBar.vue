@@ -1,18 +1,11 @@
 <template>
   <div class="app-nav-bar">
     <v-app-bar height="64" hide-on-scroll flat app>
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer"/>
+      <v-app-bar-nav-icon @click.stop="drawer = !drawer" v-if="$vuetify.breakpoint.smAndDown"/>
       <v-btn text height="64" @click.prevent="handleHome">
         <h2>{{ TOP_MENU_DATA.HOME }}</h2>
       </v-btn>
       <v-spacer/>
-      <v-btn
-        text height="64"
-        @click.prevent="handleAbout"
-        v-if="!$vuetify.breakpoint.smAndDown"
-      >
-        {{ TOP_MENU_DATA.ABOUT }}
-      </v-btn>
       <v-btn
         height="64"
         text
@@ -44,7 +37,7 @@
         inset
       />
     </v-app-bar>
-    <v-navigation-drawer v-model="drawer" absolute temporary app>
+    <v-navigation-drawer v-model="drawer" temporary app>
       <drawer-menu-items :small-screen="$vuetify.breakpoint.smAndDown" />
     </v-navigation-drawer>
   </div>

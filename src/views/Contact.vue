@@ -1,7 +1,7 @@
 <template>
   <div class="row form">
     <v-spacer />
-    <div class="col-4 mt-3" :class="isCardDark">
+    <div class="col-6 mt-3" :class="isCardDark">
       <v-form
         ref="form"
         lazy-validation
@@ -24,9 +24,11 @@
           >Send</v-btn>
         </v-row>
         <v-alert class="warning">
-          Back end is still not working,
-          meanwhile it is not enabled you can contact me
-          by email: <strong>evertonvanoni1@gmail.com</strong>
+          Back end is still not working! ☹ <br>
+          Meanwhile it is not enabled you can contact me
+          by email:
+          <strong><a href="mailto:evertonvanoni1@gmail.com">
+            evertonvanoni1@gmail.com</a></strong>
         </v-alert>
       </v-form>
     </div>
@@ -60,6 +62,10 @@ export default {
   }
   &__light {
     background-color: $color-light-transparent !important;
+  }
+  .warning {
+    color: black;
+    padding: 1em;
   }
 }
 </style>

@@ -32,10 +32,12 @@ export default {
 <style>
 .light-theme {
   background-size: auto;
-  background: url("./assets/img/themes/light-theme.jpg") repeat-y center;
+  background: radial-gradient(circle, rgba(2,0,36,1) 0%,
+  rgba(209,209,209,1) 0%, rgba(255,255,255,1) 100%);
 }
 .dark-theme {
   background-size: auto;
-  background: url("./assets/img/themes/dark-theme.jpg") repeat-y center;
+  background: radial-gradient(circle, rgba(2,0,36,1) 0%,
+  rgba(92,90,90,1) 0%, rgba(0,0,0,1) 100%);
 }
 </style>
