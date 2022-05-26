@@ -1,6 +1,6 @@
 <template>
   <div class="card-custom">
-    <v-card :class="isCardDark" elevation="0" class="text-center card-main__rounded" outlined>
+    <v-card :class="isCardDark" elevation="1" class="text-center card-main__rounded" outlined>
       <v-row class="justify-center" no-gutters>
         <v-icon>{{ cardData[this.cardNumber].ICON }}</v-icon>
         <v-card-title class="justify-center pa-2">

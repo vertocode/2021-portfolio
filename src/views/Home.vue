@@ -9,7 +9,7 @@
       >
         <h1 class="text-center mt-4">{{ HOME_DATA.FULL_NAME }}</h1>
         <v-row no-gutters class="my-8 d-flex justify-center">
-          <v-col cols="4">
+          <v-col :cols="colsSkillsAndImage">
             <v-img
               class="ma-auto"
               id="home-profile"
@@ -90,6 +90,9 @@ export default {
     },
     titleCardCentered() {
       return this.$vuetify.breakpoint.smAndDown ? 'mb-3 text-center' : 'mb-3';
+    },
+    colsSkillsAndImage() {
+      return this.$vuetify.breakpoint.smAndDown ? 12 : 4;
     },
   },
   created() {
