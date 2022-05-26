@@ -9,15 +9,29 @@
       >
         <h1 class="text-center mt-4">{{ HOME_DATA.FULL_NAME }}</h1>
         <v-row no-gutters class="my-8 d-flex justify-center">
-          <v-col cols="auto" md="auto">
+          <v-col cols="4">
             <v-img
+              class="ma-auto"
               id="home-profile"
               max-height="350"
               max-width="350"
               :src="HOME_DATA.IMAGE_PROFILE"
             />
+            <div class="ma-auto skills">
+              <h2 class="text-center mt-10">{{ SERVICES.SECOND_TITLE }}:</h2>
+              <div class="d-flex ma-5">
+                <div v-for="item in SERVICES.SECOND_CARD_DATA" :key="item.TITLE">
+                  <v-img
+                    max-height="50"
+                    max-width="50"
+                    class="mt-11 mx-3"
+                    :src="item.IMG"
+                  />
+                </div>
+              </div>
+            </div>
           </v-col>
-          <v-col cols="auto" md="9">
+          <v-col cols="8">
             <p
               class="text-left mt-5 mx-2 paragraph-indent px-5"
               v-for="(paragraph, index) in HOME_DATA.FIRST_DESCRIPTION"
@@ -40,38 +54,14 @@
           </v-col>
         </v-row>
       </v-card>
-      <v-card
-        :class="isCardDark"
-        elevation="0"
-        class="my-5 mt-8 text-center card-main__rounded"
-        outlined
-        v-if="SERVICES.SECOND_CARD_VISIBLE"
-      >
-        <h2 class="text-center mt-4">{{ SERVICES.SECOND_TITLE }}</h2>
-        <v-row
-          no-gutters
-          class="my-8 d-flex justify-center"
-          v-for="item in SERVICES.SECOND_CARD_DATA"
-          :key="item.TITLE"
-        >
-          <v-col cols="auto" md="2" align="center">
-            <v-img
-              max-height="100"
-              max-width="100"
-              class="mt-11"
-              :src="item.IMG"
-            />
-          </v-col>
-          <v-col cols="auto" md="9">
-            <div class="text-left mt-3 mx-5">
-              <h3 :class="titleCardCentered">{{ item.TITLE }}</h3>
-              <p class="paragraph-indent">
-                {{ item.DESCRIPTION }}
-              </p>
-            </div>
-          </v-col>
-        </v-row>
-      </v-card>
+    <!--      <v-card-->
+    <!--        :class="isCardDark"-->
+    <!--        elevation="0"-->
+    <!--        class="my-5 mt-8 text-center card-main__rounded"-->
+    <!--        outlined-->
+    <!--        v-if="SERVICES.SECOND_CARD_VISIBLE"-->
+    <!--      >-->
+    <!--      </v-card>-->
     </v-container>
     <!--
       it is not necessary to remove
@@ -111,6 +101,9 @@ export default {
 
 <style lang="scss" scoped>
 .home {
+  .skills {
+    width: max-content;
+  }
   .text-link__card {
     font-size: 16px;
   }

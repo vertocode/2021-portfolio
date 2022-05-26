@@ -18,17 +18,17 @@ export const HOME_DATA = {
     'I love technology and am curious about the area, you can talk to me about what might be cool. I also like a very strong coffee ☕ and I need music to be able to work with codes.',
     'My favorite language is Javascript along with the Vue.js framework, I love creating applications with it, even this website was created with Vue. 👨🏻‍💻',
     'I have an interesting knowledge in the QA area too, I\'ve learned a lot from working using Cypress.',
-    'I\'m a little obsessed with beautiful code, with a well-made structure, I\'m always looking to improve the code and structure of the project where I work. ⭐',
+    'I\'m a little obsessed with beautiful code, with a well-made structure, I\'m always looking to improve the code and structure of the project where I work.',
     'I\'m always willing to help other team members, I like to help because it solidifies my knowledge and helps him too! I am pleased to see the partner grow.',
     'I\'m very curious and I\'m always looking to improve my knowledge with studies and more studies, at the moment I\'m addicted to studying and practicing design patterns.',
-    'This was a summary of the summary about me, if you want to know me better you can contact me and it will be a pleasure to meet you! Thanks. 😉',
+    'This was a summary of the summary about me, if you want to know me better you can contact me and it will be a pleasure to meet you! Thanks.',
   ],
 };
 
 export const SERVICES = {
   // If you want it to have a second card, answer true, if not, answer false
   SECOND_CARD_VISIBLE: true,
-  SECOND_TITLE: 'Some services for you',
+  SECOND_TITLE: 'Main skills',
   SECOND_CARD_DATA: [
     {
       IMG: vuejs,
