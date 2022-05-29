@@ -3,9 +3,11 @@ import ImageProfile from '@/assets/img/everton-vanoni.jpg';
 import cypress from '@/assets/img/services/cypress.png';
 import python from '@/assets/img/services/python.png';
 import vuejs from '@/assets/img/services/vuejs.png';
+import javascript from '@/assets/img/services/javascript.svg';
 import typescript from '@/assets/img/services/typescript.png';
 import react from '@/assets/img/services/react.png';
 import sass from '@/assets/img/services/sass.png';
+import git from '@/assets/img/services/git.svg';
 
 export const HOME_DATA = {
   // FIRST CARD DATA
@@ -31,6 +33,15 @@ export const SERVICES = {
   SECOND_TITLE: 'Main skills',
   SECOND_CARD_DATA: [
     {
+      IMG: javascript,
+      TITLE: 'Javascript',
+    },
+    {
+      IMG: typescript,
+      TITLE: 'TypeScript',
+      DESCRIPTION: 'TypeScript is a programming language developed and maintained by Microsoft. It is a strict syntactical superset of JavaScript and adds optional static typing to the language. ... TypeScript may be used to develop JavaScript applications for both client-side and server-side execution (as with Node. js or Deno).',
+    },
+    {
       IMG: vuejs,
       TITLE: 'Vue.js',
       DESCRIPTION: 'Vue.js is an open-source model–view–viewmodel front end JavaScript framework for building user interfaces and single-page applications. It was created by Evan You, and is maintained by him and the rest of the active core team members.',
@@ -39,11 +50,6 @@ export const SERVICES = {
       IMG: python,
       TITLE: 'Python',
       DESCRIPTION: 'Python is an interpreted, object-oriented, high-level programming language with dynamic semantics developed by Guido van Rossum. It was originally released in 1991. Designed to be easy as well as fun, the name "Python" is a nod to the British comedy group Monty Python.',
-    },
-    {
-      IMG: typescript,
-      TITLE: 'TypeScript',
-      DESCRIPTION: 'TypeScript is a programming language developed and maintained by Microsoft. It is a strict syntactical superset of JavaScript and adds optional static typing to the language. ... TypeScript may be used to develop JavaScript applications for both client-side and server-side execution (as with Node. js or Deno).',
     },
     {
       IMG: react,
@@ -59,6 +65,10 @@ export const SERVICES = {
       IMG: sass,
       TITLE: 'Sass',
       DESCRIPTION: 'Sass (which stands for \'Syntactically awesome style sheets) is an extension of CSS that enables you to use things like variables, nested rules, inline imports and more. It also helps to keep things organised and allows you to create style sheets faster.',
+    },
+    {
+      IMG: git,
+      TITLE: 'Git',
     },
   ],
 };

@@ -19,21 +19,21 @@
             />
             <div class="ma-auto skills">
               <h2 class="text-center mt-10">{{ SERVICES.SECOND_TITLE }}:</h2>
-              <div class="d-flex ma-5">
-                <div v-for="item in SERVICES.SECOND_CARD_DATA" :key="item.TITLE">
+              <v-row class="d-flex ma-3">
+                <v-col v-for="item in SERVICES.SECOND_CARD_DATA" :key="item.TITLE">
                   <v-img
                     max-height="50"
                     max-width="50"
-                    class="mt-11 mx-3"
+                    class="mt-11 ma-auto"
                     :src="item.IMG"
                   />
-                </div>
-              </div>
+                </v-col>
+              </v-row>
             </div>
           </v-col>
           <v-col cols="8">
             <p
-              class="text-left mt-5 mx-2 paragraph-indent px-5"
+              class="text-left mt-5 mx-2 paragraph-indent px-2"
               v-for="(paragraph, index) in HOME_DATA.FIRST_DESCRIPTION"
               :key="index"
             >
@@ -104,9 +104,6 @@ export default {
 
 <style lang="scss" scoped>
 .home {
-  .skills {
-    width: max-content;
-  }
   .text-link__card {
     font-size: 16px;
   }
