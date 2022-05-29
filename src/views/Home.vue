@@ -7,7 +7,20 @@
         class="my-1 text-center card-main__rounded"
         outlined
       >
-        <h1 class="text-center mt-4">{{ HOME_DATA.FULL_NAME }}</h1>
+        <vue-typer
+          class="custom-char"
+          :text='["Front-end Developer","Quality Assurance Developer (QA)", "Javascript Developer"]'
+          :repeat='Infinity'
+          :shuffle='true'
+          initial-action='typing'
+          :pre-type-delay='70'
+          :type-delay='90'
+          :pre-erase-delay='2000'
+          :erase-delay='30'
+          erase-style='select-back'
+          :erase-on-complete='false'
+          caret-animation='blink'
+        ></vue-typer>
         <v-row no-gutters class="my-8 d-flex justify-center">
           <v-col :cols="colsSkillsAndImage">
             <v-img
@@ -104,6 +117,12 @@ export default {
 
 <style lang="scss" scoped>
 .home {
+  .vue-typer {
+    font-size: 3rem;
+    .custom.char {
+      color: white !important;
+    }
+  }
   .text-link__card {
     font-size: 16px;
   }
